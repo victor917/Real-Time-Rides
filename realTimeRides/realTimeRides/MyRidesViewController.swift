@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MyRidesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var list = ["Buy milk", "Run 5 miles", "Get Peter", "Plant plants"]
     
@@ -24,6 +24,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.textLabel?.text = list[indexPath.row]
         
         return (cell)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            list.remove(at: indexPath.row)
+            myTableView.reloadData()
+        }
     }
 
     
