@@ -16,6 +16,8 @@
 		15750E1A1FF0A77C00E335B2 /* realTimeRidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E191FF0A77C00E335B2 /* realTimeRidesTests.swift */; };
 		15750E251FF0A77C00E335B2 /* realTimeRidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E241FF0A77C00E335B2 /* realTimeRidesUITests.swift */; };
 		15750E331FF0BB1000E335B2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E321FF0BB1000E335B2 /* ProfileViewController.swift */; };
+		15750E381FF1B4CF00E335B2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E361FF1B4CF00E335B2 /* TableViewCell.swift */; };
+		15750E391FF1B4CF00E335B2 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15750E371FF1B4CF00E335B2 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		15750E241FF0A77C00E335B2 /* realTimeRidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realTimeRidesUITests.swift; sourceTree = "<group>"; };
 		15750E261FF0A77C00E335B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15750E321FF0BB1000E335B2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		15750E361FF1B4CF00E335B2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		15750E371FF1B4CF00E335B2 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		15750E011FF0A77C00E335B2 /* realTimeRides */ = {
 			isa = PBXGroup;
 			children = (
+				15750E3A1FF1B4E300E335B2 /* Cell */,
 				15750E021FF0A77C00E335B2 /* AppDelegate.swift */,
 				15750E041FF0A77C00E335B2 /* MyRidesViewController.swift */,
 				15750E061FF0A77C00E335B2 /* PostRideViewController.swift */,
@@ -129,6 +134,15 @@
 				15750E261FF0A77C00E335B2 /* Info.plist */,
 			);
 			path = realTimeRidesUITests;
+			sourceTree = "<group>";
+		};
+		15750E3A1FF1B4E300E335B2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				15750E361FF1B4CF00E335B2 /* TableViewCell.swift */,
+				15750E371FF1B4CF00E335B2 /* TableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15750E0F1FF0A77C00E335B2 /* LaunchScreen.storyboard in Resources */,
+				15750E391FF1B4CF00E335B2 /* TableViewCell.xib in Resources */,
 				15750E0C1FF0A77C00E335B2 /* Assets.xcassets in Resources */,
 				15750E0A1FF0A77C00E335B2 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15750E381FF1B4CF00E335B2 /* TableViewCell.swift in Sources */,
 				15750E071FF0A77C00E335B2 /* PostRideViewController.swift in Sources */,
 				15750E031FF0A77C00E335B2 /* AppDelegate.swift in Sources */,
 				15750E331FF0BB1000E335B2 /* ProfileViewController.swift in Sources */,
