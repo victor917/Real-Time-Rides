@@ -13,7 +13,7 @@
         <!--My Rides-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="My Rides" id="9pv-A4-QxB" customClass="FirstViewController" customModule="realTimeRides" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="My Rides" id="9pv-A4-QxB" customClass="MyRidesViewController" customModule="realTimeRides" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="My Rides" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="myTableView" destination="gAy-Ta-f7j" id="mem-oY-tyb"/>
                     </connections>
@@ -58,24 +58,38 @@
         <!--Profile-->
         <scene sceneID="qvO-db-aki">
             <objects>
-                <viewController title="Profile" id="GQg-Tu-mi5" sceneMemberID="viewController">
+                <viewController title="Profile" id="GQg-Tu-mi5" customClass="ProfileViewController" customModule="realTimeRides" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vn5-nD-CvR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCb-Ez-GAQ">
+                                <rect key="frame" x="117" y="42" width="141" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="profileName"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OjT-bM-M4g">
+                                <rect key="frame" x="67" y="87" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ni6-zQ-Y2h"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="qf3-4c-hsq"/>
+                    <tabBarItem key="tabBarItem" title="My Profile" image="first" id="qf3-4c-hsq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h86-qt-2nL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="685"/>
+            <point key="canvasLocation" x="-2.3999999999999999" y="749.7751124437782"/>
         </scene>
         <!--Post Ride-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController title="Post Ride" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="realTimeRides" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Post Ride" id="8rJ-Kc-sve" customClass="PostRideViewController" customModule="realTimeRides" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +122,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k05-dc-sgh">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="k05-dc-sgh" customClass="Post">
                                 <rect key="frame" x="0.0" y="194" width="375" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="535867482.10027897">
                                     <!--2017-12-25 04:04:42 +0000-->
@@ -178,7 +192,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Post Ride" image="first" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,6 +220,5 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
     </resources>
 </document>

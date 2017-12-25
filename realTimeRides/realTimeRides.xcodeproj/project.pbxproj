@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		15750E031FF0A77C00E335B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E021FF0A77C00E335B2 /* AppDelegate.swift */; };
-		15750E051FF0A77C00E335B2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E041FF0A77C00E335B2 /* FirstViewController.swift */; };
-		15750E071FF0A77C00E335B2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E061FF0A77C00E335B2 /* SecondViewController.swift */; };
+		15750E051FF0A77C00E335B2 /* MyRidesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E041FF0A77C00E335B2 /* MyRidesViewController.swift */; };
+		15750E071FF0A77C00E335B2 /* PostRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E061FF0A77C00E335B2 /* PostRideViewController.swift */; };
 		15750E0A1FF0A77C00E335B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15750E081FF0A77C00E335B2 /* Main.storyboard */; };
 		15750E0C1FF0A77C00E335B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15750E0B1FF0A77C00E335B2 /* Assets.xcassets */; };
 		15750E0F1FF0A77C00E335B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15750E0D1FF0A77C00E335B2 /* LaunchScreen.storyboard */; };
 		15750E1A1FF0A77C00E335B2 /* realTimeRidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E191FF0A77C00E335B2 /* realTimeRidesTests.swift */; };
 		15750E251FF0A77C00E335B2 /* realTimeRidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E241FF0A77C00E335B2 /* realTimeRidesUITests.swift */; };
+		15750E331FF0BB1000E335B2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15750E321FF0BB1000E335B2 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,8 @@
 /* Begin PBXFileReference section */
 		15750DFF1FF0A77C00E335B2 /* realTimeRides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = realTimeRides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15750E021FF0A77C00E335B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15750E041FF0A77C00E335B2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		15750E061FF0A77C00E335B2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		15750E041FF0A77C00E335B2 /* MyRidesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRidesViewController.swift; sourceTree = "<group>"; };
+		15750E061FF0A77C00E335B2 /* PostRideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRideViewController.swift; sourceTree = "<group>"; };
 		15750E091FF0A77C00E335B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15750E0B1FF0A77C00E335B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15750E0E1FF0A77C00E335B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		15750E201FF0A77C00E335B2 /* realTimeRidesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = realTimeRidesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15750E241FF0A77C00E335B2 /* realTimeRidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realTimeRidesUITests.swift; sourceTree = "<group>"; };
 		15750E261FF0A77C00E335B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15750E321FF0BB1000E335B2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				15750E021FF0A77C00E335B2 /* AppDelegate.swift */,
-				15750E041FF0A77C00E335B2 /* FirstViewController.swift */,
-				15750E061FF0A77C00E335B2 /* SecondViewController.swift */,
+				15750E041FF0A77C00E335B2 /* MyRidesViewController.swift */,
+				15750E061FF0A77C00E335B2 /* PostRideViewController.swift */,
+				15750E321FF0BB1000E335B2 /* ProfileViewController.swift */,
 				15750E081FF0A77C00E335B2 /* Main.storyboard */,
 				15750E0B1FF0A77C00E335B2 /* Assets.xcassets */,
 				15750E0D1FF0A77C00E335B2 /* LaunchScreen.storyboard */,
@@ -262,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15750E071FF0A77C00E335B2 /* SecondViewController.swift in Sources */,
+				15750E071FF0A77C00E335B2 /* PostRideViewController.swift in Sources */,
 				15750E031FF0A77C00E335B2 /* AppDelegate.swift in Sources */,
-				15750E051FF0A77C00E335B2 /* FirstViewController.swift in Sources */,
+				15750E331FF0BB1000E335B2 /* ProfileViewController.swift in Sources */,
+				15750E051FF0A77C00E335B2 /* MyRidesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
