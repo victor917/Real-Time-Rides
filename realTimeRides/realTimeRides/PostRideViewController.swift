@@ -10,6 +10,17 @@ import UIKit
 
 class PostRideViewController: UIViewController {
 
+    @IBOutlet weak var NumPeople: UITextField!
+    @IBOutlet weak var Price: UITextField!
+    
+    @IBAction func AddRide(_ sender: Any) {
+        if (NumPeople.text != "" && Price.text != "") {
+            lists.append(["Destination", NumPeople.text!, Price.text!, "Depart", "User"])
+            NumPeople.text = ""
+            Price.text = ""
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
