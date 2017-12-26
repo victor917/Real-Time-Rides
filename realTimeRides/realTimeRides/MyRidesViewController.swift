@@ -38,6 +38,7 @@ class MyRidesViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
 
     override func viewDidAppear(_ animated: Bool) {
+        counter = 0
         myTableView.reloadData()
     }
     
