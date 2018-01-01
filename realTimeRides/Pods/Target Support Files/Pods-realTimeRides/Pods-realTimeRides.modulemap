@@ -1,0 +1,6 @@
+framework module Pods_realTimeRides {
+  umbrella header "Pods-realTimeRides-umbrella.h"
+
+  export *
+  module * { export * }
+}
